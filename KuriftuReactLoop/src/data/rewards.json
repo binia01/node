@@ -1,0 +1,158 @@
+{
+  "rewards": [
+    {
+      "id": "tier_vip_lounge_voyager",
+      "type": "tier",
+      "name": "VIP Lounge Access",
+      "description": "Enjoy exclusive access to our VIP lounge.",
+      "tierLevel": "Voyager"
+    },
+    {
+      "id": "tier_bts_tour_ambassador",
+      "type": "tier",
+      "name": "Behind-the-Scenes Tour",
+      "description": "Get a special tour behind the scenes of Kuriftu.",
+      "tierLevel": "Ambassador"
+    },
+    {
+      "id": "tier_digital_badge_explorer",
+      "type": "tier",
+      "name": "Digital Loyalty Badge: Explorer",
+      "description": "A special digital badge to showcase your loyalty.",
+      "tierLevel": "Explorer"
+    },
+    {
+      "id": "tier_exclusive_event_elite",
+      "type": "tier",
+      "name": "Access to Exclusive Events",
+      "description": "Invitation to special events reserved for our top tier members.",
+      "tierLevel": "Elite"
+    },
+    {
+      "id": "tier_special_menu_voyager",
+      "type": "tier",
+      "name": "Tier-Specific Menu",
+      "description": "Enjoy a curated menu with dishes not available to other guests.",
+      "tierLevel": "Voyager"
+    },
+    {
+      "id": "tier_early_drink_access_ambassador",
+      "type": "tier",
+      "name": "Early Access to New Drink Blends",
+      "description": "Be the first to taste our newest beverage creations.",
+      "tierLevel": "Ambassador"
+    },
+    {
+      "id": "tier_blazing_fast_wifi_explorer",
+      "type": "tier",
+      "name": "Blazing Fast Wi-Fi Upgrade",
+      "description": "Enjoy complimentary premium, high-speed Wi-Fi.",
+      "tierLevel": "Explorer"
+    },
+    {
+      "id": "point_guided_nature_walk",
+      "type": "point",
+      "name": "Guided Nature Walk",
+      "description": "Join our resident expert for an informative walk through our scenic trails.",
+      "pointsNeeded": 0
+    },
+    {
+      "id": "point_sunset_viewing",
+      "type": "point",
+      "name": "Exclusive Sunset Viewing",
+      "description": "Access a prime location for a breathtaking sunset experience.",
+      "pointsNeeded": 0
+    },
+    {
+      "id": "point_cultural_session",
+      "type": "point",
+      "name": "Cultural Sharing Session",
+      "description": "Engage with local artisans and learn about regional culture.",
+      "pointsNeeded": 0
+    },
+    {
+      "id": "point_sustainability_tour",
+      "type": "point",
+      "name": "Sustainability Initiatives Tour",
+      "description": "Discover Kuriftu's commitment to environmental sustainability.",
+      "pointsNeeded": 0
+    },
+    {
+      "id": "point_photo_feature",
+      "type": "point",
+      "name": "Have Your Photo Featured",
+      "description": "Showcase your Kuriftu memories by having your photo featured on our social media.",
+      "pointsNeeded": 100
+    },
+    {
+      "id": "point_local_story_access",
+      "type": "point",
+      "name": "Access to Local Legends & Stories",
+      "description": "Unlock exclusive digital content about the history and legends of the region.",
+      "pointsNeeded": 50
+    },
+    {
+      "id": "point_flower_picking",
+      "type": "point",
+      "name": "Flower Picking Experience (Cost Applies)",
+      "description": "Enjoy picking your own flowers in our gardens (additional cost may apply).",
+      "pointsNeeded": 25
+    },
+    {
+      "id": "point_strawberry_picking",
+      "type": "point",
+      "name": "Strawberry Picking Experience (Cost Applies)",
+      "description": "Harvest fresh strawberries from our fields (additional cost may apply).",
+      "pointsNeeded": 30
+    },
+    {
+      "id": "point_event_ticket_discount",
+      "type": "point",
+      "name": "Early Access & Discount on Event Tickets",
+      "description": "Get early access to event tickets with a special discount.",
+      "pointsNeeded": 150
+    },
+    {
+      "id": "reward_coffee",
+      "type": "point",
+      "name": "Free Coffee at Resort Cafe",
+      "description": "Enjoy a complimentary regular coffee at our cozy resort cafe.",
+      "pointsNeeded": 50
+    },
+    {
+      "id": "reward_spa_discount",
+      "type": "point",
+      "name": "10% Off Next Spa Treatment",
+      "description": "Treat yourself to further relaxation with a 10% discount on your next spa service.",
+      "pointsNeeded": 150
+    },
+    {
+      "id": "reward_room_upgrade",
+      "type": "point",
+      "name": "Upgrade to a Deluxe Room (Next Stay)",
+      "description": "Use your points to upgrade to a more spacious and luxurious deluxe room on your next visit.",
+      "pointsNeeded": 300
+    },
+    {
+      "id": "reward_free_night",
+      "type": "point",
+      "name": "Free Night Stay",
+      "description": "Redeem a full free night at Kuriftu Resorts!",
+      "pointsNeeded": 500
+    },
+    {
+      "id": "reward_late_checkout",
+      "type": "point",
+      "name": "Late Check-Out",
+      "description": "Enjoy the flexibility of a late check-out until 2 PM.",
+      "pointsNeeded": 75
+    },
+    {
+      "id": "reward_welcome_drink",
+      "type": "point",
+      "name": "Welcome Drink on Arrival",
+      "description": "Start your stay with a refreshing welcome drink at the lobby bar.",
+      "pointsNeeded": 25
+    }
+  ]
+}

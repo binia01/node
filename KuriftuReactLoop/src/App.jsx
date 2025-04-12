@@ -2,6 +2,7 @@ import React from 'react';
 import {  Routes, Route, Link } from 'react-router-dom';
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
+import HomePage from './pages/HomePage';
 import DiscoveryPage from './pages/DiscoveryPage';
 import UserDashboard from './pages/UserDashboard';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -22,8 +23,8 @@ function App() {
   };
 
   return (
-    <>
-    <nav className="bg-gray-100 py-4">
+    <div className='bg-gradient-to-br from-green-50 to-white' >
+    <nav className=" py-4">
         <div className="container mx-auto flex justify-between items-center">
           <Link to="/" className="text-xl font-semibold">Kuriftu Loop</Link>
           <div>
@@ -34,13 +35,13 @@ function App() {
         </div>
       </nav>
      <Routes>
-        <Route path="/" element={<div>Home Page </div>} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/discovery" element={<ProtectedRoute><DiscoveryPage /></ProtectedRoute>} />
         <Route path="/dashboard" element={<ProtectedRoute><UserDashboard /></ProtectedRoute>} />
       </Routes>
-    </>
+    </div>
      
   );
 }

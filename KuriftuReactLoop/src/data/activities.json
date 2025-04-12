@@ -13,7 +13,7 @@
         
           "tags": ["resort", "exploration", "relaxation"],
         
-          "imageUrl": "https://via.placeholder.com/400/a1b2c3/ffffff?Text=Resort+Grounds"
+          "imageUrl": "../public/images/kuriftu_pic.webp"
         
         },
         
@@ -29,7 +29,7 @@
         
           "tags": ["fitness", "gym", "workout"],
         
-          "imageUrl": "https://via.placeholder.com/400/c3a1b2/ffffff?Text=Resort+Gym"
+          "imageUrl": "../public/images/gym.jpg"
         
         },
         
@@ -45,7 +45,7 @@
         
           "tags": ["spa", "relaxation", "pampering"],
         
-          "imageUrl": "https://via.placeholder.com/400/b2c3a1/ffffff?Text=Resort+Spa"
+          "imageUrl": "../public/images/spa.jpg"
         
         },
         
@@ -61,7 +61,7 @@
         
           "tags": ["dining", "restaurant", "fine dining", "food"],
         
-          "imageUrl": "https://via.placeholder.com/400/a1c3b2/ffffff?Text=XYZ+Restaurant"
+          "imageUrl": "../public/images/dinning.jpg"
         
         },
         
@@ -77,7 +77,7 @@
         
           "tags": ["room service", "dining", "convenience"],
         
-          "imageUrl": "https://via.placeholder.com/400/c3b2a1/ffffff?Text=Room+Service"
+          "imageUrl": "../public/images/service.jpg"
         
         },
         
@@ -93,7 +93,7 @@
         
           "tags": ["tour", "cultural", "history", "walking"],
         
-          "imageUrl": "https://via.placeholder.com/400/d1a7ed/ffffff?Text=City+Tour"
+          "imageUrl": "../public/images/kuriftu_pic.webp"
         
         },
         
@@ -109,7 +109,7 @@
         
           "tags": ["cultural", "museum", "art", "history"],
         
-          "imageUrl": "https://via.placeholder.com/400/e0b0ff/ffffff?Text=National+Museum"
+          "imageUrl": "../public/images/museum.jpg"
         
         },
         
@@ -125,7 +125,7 @@
         
           "tags": ["cultural", "workshop", "crafts", "local"],
         
-          "imageUrl": "https://via.placeholder.com/400/a7d1ed/ffffff?Text=Craft+Workshop"
+          "imageUrl": "../public/images/crafts.jpg"
         
         }
         
