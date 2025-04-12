@@ -20,7 +20,7 @@ function SignupPage() {
       const user = userCredential.user;
       console.log('Signup successful:', user);
       await setDoc(doc(db, 'users', user.uid), {
-        points: 0,
+        points: 1000,
         tier: 'Explorer', // Default tier
         // Add other user-specific data here if needed
       });

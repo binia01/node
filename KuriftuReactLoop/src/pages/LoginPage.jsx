@@ -37,50 +37,55 @@ function LoginPage() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md w-96">
-        <h2 className="text-2xl font-semibold mb-4">Log In</h2>
-        {error && <p className="text-red-500 mb-2">{error}</p>}
-        <form onSubmit={handleLogin}>
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div className="mb-6">
-            <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
-          <button
-            type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-          >
-            Log In
-          </button>
-        </form>
-        <p className="mt-4 text-sm">
-          Don't have an account?{' '}
-          <Link to="/signup" className="text-blue-500 hover:underline">
-            Sign Up
-          </Link>
-        </p>
-      </div>
-    </div>
+    <div className="min-h-screen bg-gradient-to-br from-green-700 via-green-100 to-white 
+                flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+            <div className="container flex flex-col justify-center md:flex-row w-full max-w-3xl h-[28rem] md:h-[24rem] shadow-xl rounded-xl overflow-hidden mx-auto">
+
+            <div className="w-full md:w-2/5 h-64 md:h-auto bg-cover bg-center"
+            style={{
+                backgroundImage: "url('/images/kuriftu pic4.jpg')",
+                minHeight: '300px'
+                }}>
+                </div>
+
+                {/* Form section (right) */}
+            <div className="w-full md:w-3/5 bg-white p-8 md:p-10 flex flex-col justify-center">
+                <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Login to Kuriftu Loop</h2>
+                <form onSubmit={handleLogin}>
+                    <div className="mb-4">
+                        <label className="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input
+                            type="email"
+                            placeholder="Your Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        />
+                    </div>
+                    <div className="mb-6">
+                        <label className="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                        <input
+                            type="password"
+                            placeholder="Your Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                        />
+                    </div>
+                    {error && <div className="text-red-500 text-sm italic mb-4">{error}</div>}
+                    <button
+                        type="submit"
+                        className="bg-green-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                    >
+                        Login
+                    </button>
+                    <p className="text-center text-gray-600 text-sm mt-4">
+                        Don't have an account? <Link to='/signup' className='text-green-500 hover:text-green-700'>Sign Up</Link>
+                    </p>
+                </form>
+            </div>
+            </div>
+        </div>
   );
 }
 
