@@ -1,26 +1,29 @@
-// src/pages/DiscoveryPage.jsx
 import React, { useState, useEffect } from 'react';
-import activitiesData from '../data/activities.json'; // Import the JSON data
-import Button from '../components/Button'; // new import
-import RedeemPopup from '../components/RedeemPopup'; // new import
-import FeedbackPopup from '../components/FeedbackPopup'; // new import
+import activitiesData from '../data/activities.json';
+import Button from '../components/Button';
+import RedeemPopup from '../components/RedeemPopup';
+import FeedbackPopup from '../components/FeedbackPopup';
+// Import Firestore and auth to perform database operations
+import { auth, db } from '../firebase/firebase';
+import { doc, updateDoc, increment } from 'firebase/firestore';
 
 function DiscoveryPage() {
   const [activities, setActivities] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-  const [isRedeemPopupOpen, setIsRedeemPopupOpen] = useState(false); // new state for popup
-  const [isFeedbackPopupOpen, setIsFeedbackPopupOpen] = useState(false); // new state
-  const [selectedActivity, setSelectedActivity] = useState(null); // new state
+  const [isRedeemPopupOpen, setIsRedeemPopupOpen] = useState(false);
+  const [isFeedbackPopupOpen, setIsFeedbackPopupOpen] = useState(false);
+  const [selectedActivity, setSelectedActivity] = useState(null);
+  // You may keep a local state if needed, but the DB will be the source of truth.
+  const [userPoints, setUserPoints] = useState(0);
 
   useEffect(() => {
     const loadActivities = () => {
       setLoading(true);
       setError('');
       try {
-        // Simulate an asynchronous operation
         setTimeout(() => {
-          setActivities(activitiesData.activities); // Access the 'activities' array
+          setActivities(activitiesData.activities);
           setLoading(false);
         }, 500);
       } catch (err) {
@@ -33,13 +36,36 @@ function DiscoveryPage() {
     loadActivities();
   }, []);
 
-  const handleRedeem = (points) => { // new callback
-    console.log('Redeemed points:', points);
-    setIsRedeemPopupOpen(false);
+  const handleRedeem = async (points) => {
+    try {
+      if (auth.currentUser) {
+        const userDocRef = doc(db, 'users', auth.currentUser.uid);
+        await updateDoc(userDocRef, { points: increment(points) });
+        console.log(`Successfully redeemed ${points} points in the database.`);
+      } else {
+        console.error('No user logged in. Cannot redeem points.');
+      }
+    } catch (err) {
+      console.error('Error redeeming points:', err);
+    } finally {
+      setIsRedeemPopupOpen(false);
+    }
   };
 
-  const handleFeedbackSubmit = (activity, feedback, points) => { // new callback
-    console.log(`Feedback for ${activity}: ${feedback} (Awarded Points: ${points})`);
+  const handleFeedbackSubmit = async (activity, feedback, points) => {
+    try {
+      if (auth.currentUser) {
+        const userDocRef = doc(db, 'users', auth.currentUser.uid);
+        await updateDoc(userDocRef, { points: increment(points) });
+        console.log(`Feedback for ${activity}: ${feedback} (Awarded Points: ${points})`);
+      } else {
+        console.error('No user logged in. Cannot submit feedback.');
+      }
+    } catch (err) {
+      console.error('Error submitting feedback:', err);
+    } finally {
+      setIsFeedbackPopupOpen(false);
+    }
   };
 
   if (loading) {
