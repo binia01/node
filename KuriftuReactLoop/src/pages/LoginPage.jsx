@@ -16,6 +16,10 @@ function LoginPage() {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
+
+
+
+
       console.log('Login successful:', user);
       // Redirect to the discovery page after successful login
       navigate('/discovery');
