@@ -1,0 +1,40 @@
+{
+     "rewards": [
+      {
+        "name": "Free Coffee at Resort Cafe",
+        "description": "Enjoy a complimentary regular coffee at our cozy resort cafe.",
+        "pointsNeeded": 50,
+        "imageUrl": "https://via.placeholder.com/150/f0e68c/000000?Text=Free+Coffee"
+      },
+      {
+        "name": "10% Off Next Spa Treatment",
+        "description": "Treat yourself to further relaxation with a 10% discount on your next spa service.",
+        "pointsNeeded": 150,
+        "imageUrl": "https://via.placeholder.com/150/dda0dd/ffffff?Text=10%+Off+Spa"
+      },
+      {
+        "name": "Upgrade to a Deluxe Room (Next Stay)",
+        "description": "Use your points to upgrade to a more spacious and luxurious deluxe room on your next visit.",
+        "pointsNeeded": 300,
+        "imageUrl": "https://via.placeholder.com/150/4682b4/ffffff?Text=Deluxe+Upgrade"
+      },
+      {
+        "name": "Free Night Stay",
+        "description": "Redeem a full free night at Kuriftu Resorts!",
+        "pointsNeeded": 500,
+        "imageUrl": "https://via.placeholder.com/150/3cb371/ffffff?Text=Free+Night"
+      },
+      {
+        "name": "Late Check-Out",
+        "description": "Enjoy the flexibility of a late check-out until 2 PM.",
+        "pointsNeeded": 75,
+        "imageUrl": "https://via.placeholder.com/150/8fbc8f/ffffff?Text=Late+Check-Out"
+      },
+      {
+        "name": "Welcome Drink on Arrival",
+        "description": "Start your stay with a refreshing welcome drink at the lobby bar.",
+        "pointsNeeded": 25,
+        "imageUrl": "https://via.placeholder.com/150/b0e0e6/000000?Text=Welcome+Drink"
+      }
+    ]
+  }
