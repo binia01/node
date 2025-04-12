@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "kuriftureactloop"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "kuriftureactloop-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
