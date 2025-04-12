@@ -41,7 +41,7 @@ function SignupPage() {
   return (
     <div className="min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8"
         style={{
-            backgroundImage: "url('/images/kuriftu pic.webp')",
+            backgroundImage: "url('/images/kuriftu_pic.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
